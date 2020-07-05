@@ -1,6 +1,6 @@
 .Slogan {
     width: 100%;
-    /* height: 700px; */
+    height: 70vh;
     position: relative;
 }
 
@@ -12,7 +12,8 @@
 
 .slide img {
     width: 100%;
-    max-height: 700px;
+    height: 100%;
+    /* max-height: 700px; */
     object-fit: cover;
     object-position: center;
 }
@@ -20,10 +21,39 @@
 .slide {
     position: absolute;
     width: 100%;
+    height: 70vh;
     top: 0px;
     left: 0px;
     opacity: 0;
     visibility: hidden;
+}
+
+.slide p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 75px;
+    font-weight: 300;
+    cursor: pointer;
+    opacity: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: translate(-50%, -50%);
+}
+
+.slide p strong {
+    display: block;
+    font-size: 115px;
+    font-weight: 700;
+}
+
+.slide p:hover {
+    color: rgb(245, 139, 17);
+}
+
+.slide p.an-chu {
+    animation: an-chu 1s forwards;
 }
 
 .slide.active {
@@ -31,21 +61,85 @@
     visibility: visible;
 }
 
+.slide.active p.hien-chu{
+    animation: hien-chu 1.5s 0.5s forwards;
+}
+
 .nut-slide i {
     color: white;
     font-size: 90px;
-    opacity: 0.7;
+    opacity: 0.4;
     cursor: pointer;
+}
+
+.nut-slide i:hover {
+    opacity: 1;
 }
 
 #btn-prev {
     position: absolute;
-    top: 40%;
+    top: 42%;
     left: 5%;
 }
 
 #btn-next {
     position: absolute;
-    top: 40%;
+    top: 42%;
     right: 5%;
+}
+
+@keyframes hien-chu {
+    from {
+        opacity: 0;
+    }to {
+        opacity: 1;
+    }
+}
+
+@keyframes an-chu {
+    from {
+        opacity: 1;
+    }to {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .slide p {
+        font-size: 32px;
+    }
+
+    .slide p strong {
+        font-size: 42px;
+    }
+}
+
+@media only screen and (min-width: 661px) and (max-width: 1000px) {
+    .slide p {
+        font-size: 38px;
+    }
+
+    .slide p strong {
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1300px) {
+    .slide p {
+        font-size: 48px;
+    }
+
+    .slide p strong {
+        font-size: 65px;
+    }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1500px) {
+    .slide p {
+        font-size: 62px;
+    }
+
+    .slide p strong {
+        font-size: 92px;
+    }
 }

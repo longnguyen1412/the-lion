@@ -21,13 +21,13 @@ const Example = (props) => {
   const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <div>
+    <div className="TopMenu">
       <Navbar color="light" light expand="md">
         <div className="container">
           <NavbarBrand href="/">
               <img src={logo} height="50" alt="loading..." />
           </NavbarBrand>
-          <h2>The Lion</h2>
+          <h2>THE LION</h2>
           <NavbarToggler onClick={toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>

@@ -1,0 +1,29 @@
+.Item .icon {
+    background-color: rgb(245, 141, 22);
+    width: 130px;
+    height: 130px;
+    color: #fff;
+    font-size: 42px;
+    font-weight: 400;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.Item h5 {
+    color: #252525;
+    margin: 26px 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Item p {
+    text-align: center;
+    color: #888888;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 6px 0 10px;
+}
