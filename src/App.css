@@ -9,3 +9,43 @@
 .TopMenu .navbar {
     padding: 0;
 }
+
+h2.title {
+    color: #e67e22;
+    font-size: 30px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+h2.title::after{
+    content: " ";
+    display: block;
+    height: 0px;
+    border: #e67e22 solid 1px;
+    width: 130px;
+    margin: 10px auto;
+    opacity: 0.7;
+}
+
+.GoogleMap {
+    height: 550px;
+}
+
+.GoogleMap iframe {
+    border: none;
+}
+
+footer {
+    background-color: rgb(47, 47, 47);
+    padding: 0;
+}
+
+footer p {
+    text-align: center;
+    padding: 7px;
+    margin: 0;
+    color: #888888;
+}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row } from 'reactstrap';
 
 import Item from './Item';
 import './AboutUs.css';
@@ -46,7 +46,7 @@ class AboutUs extends React.Component {
             <section className="AboutUs">
                 <Container>
                     <Row>
-                        <h2 className="col">Về chúng tôi</h2>
+                        <h2 className="col title">Về chúng tôi</h2>
                     </Row>
                     <Row>
                         <p className="gioi-thieu col-xs-12 col-sm-12  col-md-8 offset-md-2">
@@ -56,7 +56,7 @@ class AboutUs extends React.Component {
                     </Row>
                     <Row>
                         {
-                            this.products.map( (item) => <Item {...item} />)
+                            this.products.map( (item, index) => <Item { ...item } key={index} />)
                         }
                     </Row>
                 </Container>

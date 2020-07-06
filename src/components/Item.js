@@ -4,10 +4,6 @@ import { Col } from 'reactstrap';
 import './Item.css';
 
 class Item extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
         return (
             <Col className="Item" lg="2" sm="4" xs="12">

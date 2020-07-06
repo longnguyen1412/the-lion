@@ -67,8 +67,8 @@ class Slogan extends React.Component {
                     </div>
                 </div>
                 <div className="nut-slide">
-                    <div id="btn-prev" onClick={this.onClickBtn.bind(this)}><i class="fas fa-angle-left"></i></div>
-                    <div id="btn-next" onClick={this.onClickBtn.bind(this)}><i class="fas fa-angle-right"></i></div>
+                    <div id="btn-prev" onClick={this.onClickBtn.bind(this)}><i className="fas fa-angle-left"></i></div>
+                    <div id="btn-next" onClick={this.onClickBtn.bind(this)}><i className="fas fa-angle-right"></i></div>
                 </div>
             </div>
         )

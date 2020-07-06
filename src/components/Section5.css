@@ -1,0 +1,85 @@
+.Section5 {
+    background-image: linear-gradient(90deg, rgba(9, 43, 80, 0.8), rgba(45,95,93, 0.8)), url("../img/background5.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 10px;
+    overflow: hidden;
+}
+
+.information {
+    color: white;
+    line-height: 200%;
+    word-spacing: 3px;
+    font-size: 18px;
+    padding: 0;
+}
+
+.information i {
+    color: #dbd2d1;
+    margin-right: 15px;
+    transition: all ease 300ms;
+}
+
+.information i:hover {
+    transform: scale(1.3);
+}
+
+.Section5 li {
+    list-style: none;
+}
+
+.social-icon {
+    margin-top: 50px;
+    text-align: center;
+    padding: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    margin: 15px;
+}
+
+.social-icon i {
+    color: white;
+    font-size: 60px;
+    transition: all ease 300ms;
+}
+
+.social-icon i:hover {
+    color: #c6bfbf;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+/* Contact-form */
+/* ------------ */
+
+.contact-form{
+    border: white solid 1px;
+    width: 90%;
+    padding: 30px 10px;
+    margin-left: 5%;
+    background-color: rgba(31, 29, 29, 0.5);
+    color: white;
+    font-size: 26px;
+}
+
+.contact-form .row{
+    margin-top: 30px;
+}
+
+input, textarea{
+    font-size: 80%;
+    width: 100%;
+    resize: none;
+    padding: 5px;
+    outline: none;
+    border: rgba(158, 11, 11, 0.5) solid 1px;
+    border-radius: 4px;
+}
+
+.contact-form .btn-all {
+    padding: 10px 30px;
+    font-size: 22px;
+    margin: auto;
+}

@@ -1,0 +1,42 @@
+.Section4 {
+    background-image: linear-gradient(45deg, rgba(9, 43, 80, 0.8) 55%, rgba(45,95,93, 0.8)), url("../img/background2.jpeg");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.Section4 blockquote img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.Section4 blockquote {
+    width: 80%;
+    color: white;
+    font-style: italic;
+    line-height: 140%;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    margin: 50px auto 30px;
+    position: relative;
+}
+
+.Section4 blockquote::before {
+    content: "\201C";
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    font-size: 300%;
+}
+
+.Section4 blockquote cite{
+    display: block;
+    margin-top: 60px;
+    color: #6b95bd;
+}
