@@ -32,25 +32,28 @@ const Example = (props) => {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#">Components</NavLink>
+                <NavLink href="#">TRANG CHỦ</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">GitHub</NavLink>
+                <NavLink href="#">SẢN PHẨM</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="#">BLOG</NavLink>
               </NavItem>
               <UncontrolledDropdown nav inNavbar>
                 <DropdownToggle nav caret>
-                  Options
+                  LIÊN HỆ
                 </DropdownToggle>
                 <DropdownMenu right>
                   <DropdownItem>
-                    Option 1
+                    <NavLink href="#lien-he">Địa chỉ</NavLink>
                   </DropdownItem>
                   <DropdownItem>
-                    Option 2
+                    <NavLink href="#lien-he">Email</NavLink>
                   </DropdownItem>
                   <DropdownItem divider />
                   <DropdownItem>
-                    Reset
+                    <NavLink href="#lien-he">Phone</NavLink>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>
